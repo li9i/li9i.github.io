@@ -1,1 +1,1 @@
-My personal github.io webpage; peace
+My personal github.io webpage. Peace
