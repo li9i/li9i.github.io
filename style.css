@@ -89,7 +89,7 @@ main {
 .quick-links .pill--linktree { --pill: var(--brand-linktree); }
 .quick-links .pill--linktree,
 .quick-links .pill--linktree:hover {
-  color: #000; background: var(--pill); border: 2px solid #000;
+  color: #000; background: var(--pill); border: 1px solid #000;
 }
 
 .section-heading {
