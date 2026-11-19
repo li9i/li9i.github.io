@@ -11,6 +11,12 @@
   --badge-text: #8a4800;
   --badge-bg: #fff2cd;
   --badge-edge: #ffd487;
+  --brand-cv: #c54500;
+  --brand-email: #ea4335;
+  --brand-linkedin: #0a66c2;
+  --brand-scholar: #4285f4;
+  --brand-github: #24292f;
+  --brand-portfolio: #7b3fe4;
 }
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; scroll-padding-top: 4.5rem; }
@@ -59,10 +65,26 @@ main {
   .about-photo { float: none; margin: 8px auto 16px; }
 }
 .quick-links {
-  clear: both; margin: 0.4em 0 1em; font-size: 0.92rem;
-  color: #4b4b4b; text-align: center;
+  clear: both; margin: 0.8em 0 1.2em; font-size: 0.92rem;
+  display: flex; flex-wrap: wrap; justify-content: center; gap: 0.3rem;
 }
-.quick-links .divider { color: #b0b7c3; margin: 0 0.35em; }
+.quick-links a {
+  --pill: var(--link);
+  padding: 0.35em 1em; border-radius: 999px; font-weight: 600;
+  color: var(--pill);
+  background: color-mix(in srgb, var(--pill) 8%, var(--bg));
+  border: 1px solid color-mix(in srgb, var(--pill) 35%, var(--bg));
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+}
+.quick-links a:hover {
+  color: var(--bg); background: var(--pill); border-color: var(--pill);
+}
+.quick-links .pill--cv { --pill: var(--brand-cv); }
+.quick-links .pill--email { --pill: var(--brand-email); }
+.quick-links .pill--linkedin { --pill: var(--brand-linkedin); }
+.quick-links .pill--scholar { --pill: var(--brand-scholar); }
+.quick-links .pill--github { --pill: var(--brand-github); }
+.quick-links .pill--portfolio { --pill: var(--brand-portfolio); }
 
 .section-heading {
   font-size: 1.32rem; letter-spacing: 0.01em; font-weight: 700;
