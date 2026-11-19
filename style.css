@@ -17,6 +17,7 @@
   --brand-scholar: #4285f4;
   --brand-github: #24292f;
   --brand-portfolio: #7b3fe4;
+  --brand-linktree: #1f9d3a;
 }
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; scroll-padding-top: 4.5rem; }
@@ -85,6 +86,7 @@ main {
 .quick-links .pill--scholar { --pill: var(--brand-scholar); }
 .quick-links .pill--github { --pill: var(--brand-github); }
 .quick-links .pill--portfolio { --pill: var(--brand-portfolio); }
+.quick-links .pill--linktree { --pill: var(--brand-linktree); }
 
 .section-heading {
   font-size: 1.32rem; letter-spacing: 0.01em; font-weight: 700;
