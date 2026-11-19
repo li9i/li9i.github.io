@@ -87,6 +87,10 @@ main {
 .quick-links .pill--github { --pill: var(--brand-github); }
 .quick-links .pill--portfolio { --pill: var(--brand-portfolio); }
 .quick-links .pill--linktree { --pill: var(--brand-linktree); }
+.quick-links .pill--linktree,
+.quick-links .pill--linktree:hover {
+  color: #000; background: var(--pill); border: 2px solid #000;
+}
 
 .section-heading {
   font-size: 1.32rem; letter-spacing: 0.01em; font-weight: 700;
